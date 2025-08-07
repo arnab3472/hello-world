@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stockscanner"
+version = "0.1.0"
+description = "Scan stocks and compute moving stock prices using simple moving averages."
+authors = [{name="Example Author", email="author@example.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["yfinance", "pandas"]
+
+[project.scripts]
+stockscanner = "stockscanner.__main__:main"
